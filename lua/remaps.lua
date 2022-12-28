@@ -38,14 +38,44 @@ map('i', '<C-right>', '<cmd>vertical resize +5<CR>', silent)
 map('n', '<C-left>', '<cmd>vertical resize -5<CR>', silent)
 map('i', '<C-left>', '<cmd>vertical resize -5<CR>', silent)
 ---- ALT + Right/Left -> Vertical Split
-map('n', '<A-right>', '<cmd>vsplit<CR>', silent)
-map('i', '<A-right>', '<cmd>vsplit<CR>', silent)
-map('n', '<A-left>', '<cmd>vsplit<CR>', silent)
-map('i', '<A-left>', '<cmd>vsplit<CR>', silent)
+map('n', '<A-s>', '<cmd>vsplit<CR>', silent)
+map('i', '<A-s>', '<cmd>vsplit<CR>', silent)
 ---- CTRL + Q -> Close window
 map('n', '<C-q>', '<cmd>q<CR>', silent)
 map('i', '<C-q>', '<cmd>q<CR>', silent)
 -- ATL + F -> Formatt with Prettier
 map('n', '<A-f>', '<cmd>Prettier<CR>', silent)
 map('i', '<A-f>', '<cmd>Prettier<CR>', silent)
+-- CTRL + W -> Close tab
+map('n', '<C-w>', '<cmd>bd<CR>', silent)
+map('i', '<C-w>', '<cmd>bd<CR>', silent)
+-- CTRL + Num -> Go to tab
+map('n', '<F1>', '<cmd>BufferLineGoToBuffer 1<CR>', silent)
+map('i', '<F1>', '<cmd>BufferLineGoToBuffer 1<CR>', silent)
 
+map('n', '<F2>', '<cmd>BufferLineGoToBuffer 2<CR>', silent)
+map('i', '<F2>', '<cmd>BufferLineGoToBuffer 2<CR>', silent)
+
+map('n', '<F3>', '<cmd>BufferLineGoToBuffer 3<CR>', silent)
+map('i', '<F3>', '<cmd>BufferLineGoToBuffer 3<CR>', silent)
+
+map('n', '<F4>', '<cmd>BufferLineGoToBuffer 4<CR>', silent)
+map('i', '<F4>', '<cmd>BufferLineGoToBuffer 4<CR>', silent)
+
+map('n', '<F5>', '<cmd>BufferLineGoToBuffer 5<CR>', silent)
+map('i', '<F5>', '<cmd>BufferLineGoToBuffer 5<CR>', silent)
+
+map('n', '<F6>', '<cmd>BufferLineGoToBuffer 6<CR>', silent)
+map('i', '<F6>', '<cmd>BufferLineGoToBuffer 6<CR>', silent)
+
+map('n', '<F7>', '<cmd>BufferLineGoToBuffer 7<CR>', silent)
+map('i', '<F7>', '<cmd>BufferLineGoToBuffer 7<CR>', silent)
+
+map('n', '<F8>', '<cmd>BufferLineGoToBuffer 8<CR>', silent)
+map('i', '<F8>', '<cmd>BufferLineGoToBuffer 8<CR>', silent)
+
+map('n', '<F9>', '<cmd>BufferLineGoToBuffer 9<CR>', silent)
+map('i', '<F9>', '<cmd>BufferLineGoToBuffer 9<CR>', silent)
+-- CTRL + N -> New File
+map('n', '<C-n>', '<cmd>DashboardNewFile<CR>', silent)
+map('i', '<C-n>', '<cmd>DsahboardNewFile<CR>', silent)

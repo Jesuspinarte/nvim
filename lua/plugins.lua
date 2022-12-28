@@ -91,4 +91,10 @@ return require('packer').startup(function(use)
   -- Prettier with Null ls
   use { 'jose-elias-alvarez/null-ls.nvim' }
   use { 'MunifTanjim/prettier.nvim' }
+
+  -- NeoVim Dashboard with Dashboard Nvim
+  use {
+    'glepnir/dashboard-nvim',
+    config = function() require('config.dashboard') end
+  }
 end)
