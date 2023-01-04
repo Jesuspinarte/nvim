@@ -78,6 +78,10 @@ return require('packer').startup(function(use)
       -- Snippets
       {'L3MON4D3/LuaSnip'},
       {'rafamadriz/friendly-snippets'},
+      {
+        'WhoIsSethDaniel/toggle-lsp-diagnostics.nvim',
+        config = function() require'toggle_lsp_diagnostics'.init() end
+      }
     }
   }
 
