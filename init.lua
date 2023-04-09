@@ -1,3 +1,4 @@
+require("plugins")
 require("remaps")
 require("options")
 require("config.lsp")

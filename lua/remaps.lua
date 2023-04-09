@@ -4,8 +4,8 @@ vim.g.mapleader = " "
 -- Map variable
 local map = vim.keymap.set
 local silent = {
-  noremap = true,
-  silent = true
+    noremap = true,
+    silent = true
 }
 
 -- Search files
@@ -30,7 +30,7 @@ map("i", "<C-o>", '<cmd>NeoTreeFocus<CR><cmd>stopinsert<CR>') -- Focus File Expl
 map('n', '<C-s>', vim.cmd.w, silent)
 map('i', '<C-s>', vim.cmd.w, silent)
 ---- CTRL + Z -> Undo
-map('n', '<C-z>', vim.cmd.u, silent)
+map('n', '<C-z>',         vim.cmd.u, silent)
 map('i', '<C-z>', vim.cmd.u, silent)
 ---- CTRL + Right/Left -> Vertical resize
 map('n', '<C-right>', '<cmd>vertical resize +5<CR>', silent)
@@ -40,6 +40,8 @@ map('i', '<C-left>', '<cmd>vertical resize -5<CR>', silent)
 ---- ALT + Right/Left -> Vertical Split
 map('n', '<A-s>', '<cmd>vsplit<CR>', silent)
 map('i', '<A-s>', '<cmd>vsplit<CR>', silent)
+map('n', '<M-s>', '<cmd>vsplit<CR>', silent)
+map('i', '<M-s>', '<cmd>vsplit<CR>', silent)
 ---- CTRL + Q -> Close window
 map('n', '<C-q>', '<cmd>q<CR>', silent)
 map('i', '<C-q>', '<cmd>q<CR>', silent)
@@ -77,5 +79,5 @@ map('i', '<F8>', '<cmd>BufferLineGoToBuffer 8<CR>', silent)
 map('n', '<F9>', '<cmd>BufferLineGoToBuffer 9<CR>', silent)
 map('i', '<F9>', '<cmd>BufferLineGoToBuffer 9<CR>', silent)
 -- CTRL + N -> New File
-map('n', '<C-n>', '<cmd>DashboardNewFile<CR>', silent)
-map('i', '<C-n>', '<cmd>DsahboardNewFile<CR>', silent)
+-- map('n', '<C-n>', '<cmd>DashboardNewFile<CR>', silent)
+-- map('i', '<C-n>', '<cmd>DsahboardNewFile<CR>', silent)
