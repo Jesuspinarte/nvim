@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/30247058/231580532-4f502750-1cc1-46a8-bcdc-7f418e3572c4.png)
+
 # Description
 
 This is a NeoVim configuration made for personal projects. This configuration doesn't have too many features because is meant to use on mobile devices, such as tablets, smartphones (like Samsung devices which have Dex mode), and low-performance computers/laptops, feel free to use it and make modifications as you want.
